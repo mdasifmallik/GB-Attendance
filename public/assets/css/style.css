@@ -1,0 +1,299 @@
+/*Default css*/
+
+*,
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+a,
+ul,
+li {
+    margin: 0;
+    padding: 0;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+button {
+    border: none;
+}
+
+button:focus {
+    outline: none;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+}
+
+li{
+    list-style: none;
+}
+
+a {
+    transition: 0.3s;
+}
+
+.green{
+    color: #31BD01;
+}
+
+.pink{
+    color: #ED0B6D;
+}
+
+
+
+
+
+
+/*Main css starts here*/
+
+
+
+/*Header area*/
+
+.header {
+    background: #242426;
+    box-shadow: 0 1px 6px 0 rgba(32, 33, 36, 0.28);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+    height: 45px
+}
+
+.logo {
+    float: left;
+}
+
+.logo h1 {
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.logo h1 a {
+    color: white;
+    line-height: 45px;
+}
+
+.logo h1 a:hover {
+    color: #C42311;
+}
+
+.admin-panel-button {
+    float: right;
+}
+
+.admin-panel-button a {
+    color: white;
+    font-size: 14px;
+    background: #C42311;
+    padding: 8px;
+    border-radius: 3px;
+    line-height: 45px;
+}
+
+.admin-panel-button a:hover {
+    background: #E83413;
+}
+
+.admin-panel-button a i {
+    margin-right: 5px;
+}
+
+
+
+
+
+/*Main content*/
+
+.content {
+    display: block;
+}
+
+.content > .container > h5 {
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 60px;
+    font-size: 18px;
+}
+
+.content > .container > h5 > span {
+    color: #F76707;
+}
+
+.attendance-search-area {
+    background: #F1F1F1;
+    border-radius: 7px;
+    padding: 40px 20px;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12) !important;
+}
+
+.attendance-search-options {}
+
+.searching-options {
+    padding: 20px 40px;
+    background: white;
+    width: 95%;
+    height: 250px;
+    margin: 0 auto;
+    border-radius: 5px;
+}
+
+.searching-options h4 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.searching-item {
+    margin: 7px;
+}
+
+.searching-item label {
+    width: 100px;
+    font-weight: bold;
+}
+
+.searching-item select {
+    height: 30px;
+    border-radius: 3px;
+}
+
+.searching-item input {
+    padding-left: 5px;
+}
+
+.search-button input {
+    padding: 0 17px;
+    background: #C42311;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 17px;
+    margin: 5px 0;
+    transition: 0.3s;
+    height: 33px;
+    line-height: 33px;
+    box-shadow: 0 -1px 5px 0 rgba(0,0,0,0.1), 0 2px 5px 0 rgba(0,0,0,0.22);
+}
+
+.search-button input:hover {
+    background: #E83413;
+    box-shadow: 0 4px 10px 0 rgba(0,0,0,0.2), 0 4px 20px 0 rgba(0,0,0,0.19);
+}
+
+
+
+
+
+/*Search By Student content*/
+
+.by-student-content {
+    margin-top: 100px;
+}
+
+.by-student-content h3 {
+    text-align: center;
+}
+
+.back-button {
+    float: right;
+    padding: 0 16px;
+    border-radius: 5px;
+    color: white;
+    background: #3C4043;
+    height: 35px;
+    display: inline-block;
+    line-height: 35px;
+    box-shadow: 0 -1px 5px 0 rgba(0,0,0,0.1), 0 2px 5px 0 rgba(0,0,0,0.22);
+}
+.back-button i{
+    margin-right: 4px;
+}
+
+.back-button:hover {
+    background: black;
+    color: white;
+    box-shadow: 0 4px 10px 0 rgba(0,0,0,0.2), 0 4px 20px 0 rgba(0,0,0,0.19);
+}
+
+.subject-attendance-info {
+    border: 1px solid #F1F1F1;
+    border-radius: 5px;
+    margin: 35px 0;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.16), 0 1px 7px 0 rgba(0, 0, 0, 0.12);
+    overflow: hidden;
+}
+
+.subject-attendance-info h4 {
+    background: #343A40;
+    padding: 5px 15px;
+}
+
+.subject-attendance-info span {
+    padding: 10px;
+    display: block;
+}
+
+
+
+/*Attendance Sheet content*/
+
+.sheet{
+    height: 500px;
+    overflow-y: scroll;
+}
+
+.sheet>table{
+    position: relative;
+}
+
+.sheet .fixed{
+    position: sticky;
+    top: 0;
+}
+
+.attendance-sheet-content {
+    margin-top: 80px;
+}
+
+.attendance-sheet-content > .container button {
+    margin-top: 80px;
+}
+
+.attendance-sheet-content > .container > h3 {
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+
+
+/*Footer area*/
+
+.footer {
+    padding: 30px;
+    border-top: 1px solid #eee;
+    margin-top: 70px;
+}
+
+.footer p {
+    text-align: center;
+    color: #3C4043;
+    font-size: 15px;
+}
+
+.footer p:last-child {
+    margin-top: 10px;
+}
+
+.footer p a {}

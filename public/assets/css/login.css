@@ -1,0 +1,58 @@
+.attendance-search-area {
+    width: 600px;
+    margin: 0 auto;
+    margin-top: 100px;
+    padding: 25px 20px;
+    height: auto;
+}
+
+.searching-options {
+    height: auto;
+}
+
+.searching-options h4 {}
+
+.login-options {}
+
+.login-options label {
+    width: 105px;
+}
+
+.login-options input {
+    width: 300px;
+    margin-top: 12px;
+    padding-left: 5px;
+}
+
+.login-options:nth-child(4) input{
+    width: 15px;
+    margin-right: 10px;
+}
+
+.login-options a {
+    float: right;
+    margin-right: 20px;
+    font-size: 14px;
+}
+
+.submit {
+    text-align: center;
+    width: 100%;
+    overflow: hidden;
+}
+
+.submit input {
+    width: 100px;
+    border: none;
+    padding: 3px 0;
+    background: #C42311;
+    border-radius: 3px;
+    color: white;
+    font-size: 17px;
+    transition: 0.3s;
+}
+
+.submit input:hover {
+    background: #FFC078;
+    color: black;
+}

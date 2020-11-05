@@ -1,0 +1,663 @@
+/*Default css*/
+
+*,
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+a,
+ul,
+li {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+button {
+    border: none;
+    background: none;
+}
+
+button:focus {
+    outline: none;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+}
+
+a {
+    transition: 0.3s;
+}
+
+.default-button {
+    padding: 0 16px;
+    background: #C42311;
+    border-radius: 5px;
+    color: white;
+    font-size: 17px;
+    transition: 0.3s;
+    border: none;
+    height: 35px;
+    display: inline-block;
+    line-height: 35px;
+    box-shadow: 0 -1px 5px 0 rgba(0, 0, 0, 0.1), 0 2px 5px 0 rgba(0, 0, 0, 0.22);
+}
+
+.default-button:hover {
+    background: #E83413;
+    color: white;
+    box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2), 0 4px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.search-button {
+    display: inline-block;
+    margin-left: 50px;
+}
+
+.back-button {
+    float: right;
+    padding: 0 16px;
+    font-size: 17px;
+    border-radius: 5px;
+    color: white;
+    background: #3C4043;
+    transition: 0.3s;
+    height: 35px;
+    display: inline-block;
+    line-height: 35px;
+    box-shadow: 0 -1px 5px 0 rgba(0, 0, 0, 0.1), 0 2px 5px 0 rgba(0, 0, 0, 0.22);
+}
+
+.back-button i {
+    margin-right: 4px;
+}
+
+.back-button:hover {
+    background: black;
+    color: white;
+    box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2), 0 4px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.add_button{
+    color: #0084FF;
+}
+.add_button:hover{
+    color: blue;
+}
+
+.delete{
+    color: red;
+    background: none;
+    border:  none;
+}
+.delete:hover{
+    color: #C60001;
+    background: none;
+}
+.extra-margin{
+    margin: 20px 0;
+}
+.unassign{
+    margin-top: 10px;
+}
+
+@keyframes modal-animation {
+  from {margin-top: -100px;}
+  to {margin-top: 180px;}
+}
+@-webkit-keyframes modal-animation {
+  from {margin-top: -100px;}
+  to {margin-top: 180px;}
+}
+
+
+
+
+
+
+
+
+
+/*Main css*/
+
+
+
+/*Header area*/
+.header {
+    background: #242426;
+    box-shadow: 0 1px 6px 0 rgba(32, 33, 36, 0.28);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+    height: 45px
+}
+
+.side-bar-button{
+    float: left;
+    cursor: pointer;
+    line-height: 45px;
+    color: white;
+    font-size: 25px;
+    display: none;
+}
+
+.logo {
+    margin-left: 10px;
+    float: left;
+}
+
+.logo h1 {
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.logo h1 a {
+    color: white;
+    line-height: 45px;
+}
+
+.logo h1 a:hover {
+    color: #C42311;
+}
+
+.home-button {
+    float: right;
+    margin-right: 10px;
+}
+
+.home-button a {
+    color: #C42311;
+    font-size: 14px;
+    padding: 7px 8px;
+    border-radius: 5px;
+    line-height: 45px;
+    border: 2px solid #C42311;
+}
+
+.home-button a:hover {
+    background: #C42311;
+    color: white;
+}
+
+.home-button a i {
+    margin-right: 3px;
+}
+
+
+
+
+
+
+
+/*Content area*/
+
+.admin-panel-content {}
+
+
+
+/*Sidebar area*/
+
+.admin-panel-side-bar {
+    margin-top: 45px;
+    width: 260px;
+    background: #F1F1F1;
+    position: fixed;
+    height: 100%;
+    top: 0;
+    left: 0;
+    overflow: auto;
+    padding: 0;
+    padding-top: 15px;
+    padding-bottom: 70px;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+    z-index: 500;
+}
+
+.admin-panel-side-bar h4 {
+    text-align: center;
+    font-size: 20px;
+    color: #C42311;
+}
+.admin-panel-side-bar p {
+    text-align: center;
+    font-size: 11px;
+    margin-bottom: 30px;
+}
+
+.admin-panel-side-bar nav {}
+
+.admin-panel-side-bar > nav > ul > li {
+    border-bottom: 1px solid white;
+}
+
+
+
+.admin-panel-side-bar nav ul li:last-child {
+    border: none;
+}
+
+.admin-panel-side-bar nav ul li button {
+    height: 44px;
+    padding: 0px 20px;
+    width: 100%;
+    text-align: left;
+    background: none;
+}
+
+.side-attendance-button:hover {
+    background: #CCCCCC;
+}
+
+.admin-panel-side-bar nav ul li a {
+    display: block;
+    height: 44px;
+    line-height: 44px;
+    padding: 0px 20px;
+    width: 100%;
+    text-align: left;
+    color: black;
+}
+
+.admin-panel-side-bar nav ul li a:hover {
+    background: #CCCCCC;
+}
+
+.admin-panel-side-bar nav ul li a i,
+.admin-panel-side-bar nav ul li button i {
+    margin-right: 5px;
+}
+
+.last-icon {
+    margin: 0;
+    float: right;
+    margin-top: 4px;
+}
+
+.admin-panel-side-bar nav ul li nav ul li a {
+    font-size: 14px;
+    padding-left: 50px;
+    height: 40px;
+}
+
+.side-bar-open {
+    background: #CCCCCC !important;
+}
+
+.side-bar-active {
+    color: white !important;
+    background: #C42311 !important;
+}
+
+.sub-button {
+    display: none;
+}
+
+
+
+
+
+
+
+
+/*Main Content area*/
+
+.admin-panel-main {
+    margin-left: 270px;
+    margin-top: 60px;
+    padding: 20px;
+}
+
+
+
+/*Main sub-content area*/
+
+.admin-panel-sub-content {
+    min-height: 400px;
+}
+
+.admin-sub-heading {
+    margin-bottom: 70px;
+}
+
+.admin-sub-heading h3 {
+    margin-bottom: 5px;
+}
+
+.admin-sub-heading p {
+    font-size: 14px;
+    color: #3C4043;
+}
+
+.admin-sub-selection {
+    padding-bottom: 30px;
+}
+
+.selection-area {
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12) !important;
+    border-radius: 5px;
+    max-width: 460px;
+    margin: 0 auto;
+}
+
+.selection-heading {
+    background: #F1F1F1;
+    text-align: center;
+    padding: 8px;
+}
+
+.selection-heading h4 {}
+
+.selection-input {
+    padding: 15px 25px;
+}
+
+.select-option {
+    padding: 5px;
+}
+
+.select-option label {
+    width: 100px;
+    font-weight: bold;
+}
+
+.select-option select {
+    padding: 3px;
+    border-radius: 3px;
+}
+
+.select-option input {
+    
+}
+
+.attendance-button {
+    text-align: center;
+}
+
+.attendance-button input {
+    border: none;
+}
+
+.edit-sub-selection {
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.edit-sub-selection label {
+    width: 100px;
+}
+
+.edit-sub-selection b {
+    display: inline-block;
+    margin-bottom: 5px;
+}
+
+.attendance-info {
+    margin-bottom: 15px;
+}
+
+.attendance-info span {
+    color: #C42311;
+}
+
+.admin-attendance {
+    max-width: 700px;
+}
+
+.admin-attendance table input {
+    width: 20px;
+    height: 20px;
+}
+
+.admin-attendance > form > input {
+    border: none;
+    float: right;
+}
+
+.admin-attendance > form > a:hover {
+    color: red;
+}
+
+.admin-attendance button:hover {
+    background: #FFC078;
+    color: black;
+}
+
+.editing-option {}
+
+.editing-option label {
+    width: 150px;
+    font-weight: bold;
+}
+
+.editing-option input {
+    width: 60%;
+    margin-bottom: 30px;
+    margin-right: 30px;
+    padding-left: 5px;
+}
+
+.editing-option button {
+    margin-top: 20px;
+}
+
+.sub-sub-heading h3 {
+    padding-top: 20px;
+}
+
+
+
+
+/*Particular sub-content area*/
+
+#new-attendance {}
+
+.department-list,
+.admin-list,
+.subject-list {
+    max-width: 800px;
+}
+
+.department-list button,
+.edit-admin-button,
+.edit-subject-button,
+.edit-lecturer-button,
+.edit-batch-button,
+.delete-student-button {
+    background: none;
+    color: #007bff;
+}
+
+.department-list button:hover,
+.edit-admin-button:hover,
+.edit-subject-button:hover,
+.edit-lecturer-button:hover,
+.edit-batch-button:hover,
+.delete-student-button:hover {
+    color: #6610f2;
+}
+
+.new-admin-button,
+.new-subject-button,
+.new-lecturer-button,
+.new-batch-button,
+.new-department-button {
+    margin-bottom: 20px;
+}
+
+.new-lecturer-button a {
+    margin-right: 20px;
+}
+
+.settings-editing-area {
+    border: 1px solid #F1F1F1;
+    border-radius: 5px;
+    margin: 35px 0;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.16), 0 1px 7px 0 rgba(0, 0, 0, 0.12);
+    max-width: 700px;
+}
+
+.settings-editing-area h4 {
+    background: #F1F1F1;
+    padding: 5px 15px;
+}
+
+.settings-option {
+    padding: 0 50px;
+    padding-top: 15px;
+}
+
+.settings-option label {
+    width: 180px;
+    font-weight: bold;
+}
+
+.settings-option input {
+    width: 60%;
+    padding-left: 5px;
+}
+
+.settings-option button {
+    margin-bottom: 20px;
+}
+
+.add-student-table {
+    max-width: 700px;
+}
+
+.add-student-table > table > tbody > tr > td:nth-child(2) input {
+    width: 100%;
+}
+
+.add-student-table > table > tbody > tr > td:nth-child(3) input {
+    width: 100px;
+}
+
+.new-batch-section{
+    border: 2px solid #F2F2F2;
+    border-radius: 5px;
+    padding: 12px;
+    display: inline-block;
+    margin-bottom: 20px;
+}
+.nbinput{}
+.nbinput label{
+    width: 150px;
+}
+.nbinput input{
+    width: 100px;
+}
+.addstudent{
+    display: block;
+    margin-top: 50px;
+}
+.del_att{
+    overflow: hidden;
+    width: 100%;
+}
+
+.subject-list select{
+    height: 28px;
+    border-radius: 3px;
+}
+
+.editing-option{
+    margin-bottom: 10px;
+}
+
+.editing-option select{
+    height: 28px;
+    border-radius: 3px;
+}
+
+
+
+
+/*Modal area*/
+#mymodal{
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 550;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.5);
+}
+#mymodal-content, #add_student_modal-content{
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 50%;
+    z-index: 600;
+    width: 400px;
+    margin-left: -200px;
+    margin-top: 180px;
+    background: white;
+    padding: 20px;
+    border-radius: 5px;
+    animation-name: modal-animation;
+    -webkit-animation-name: modal-animation;
+    animation-duration: 0.5s;
+    -webkit-animation-duration: 0.5s;
+}
+#mymodal-content h4{
+    font-size: 20px;
+}
+.mymodal-buttons{
+    margin-top: 15px;
+    font-size: 18px;
+    float: right;
+    width: 130px;
+}
+.mm_button_items{
+    float: left;
+    margin-left: 20px;
+}
+
+
+#add_student_modal-content{}
+.modal_input{}
+.modal_input_field{}
+.modal_input_field label{
+    width: 60px;
+    font-weight: bold;
+}
+.modal_input_field input{
+    width: 250px;
+}
+.mm_button_items input{
+    background: none;
+    border: none;
+}
+
+
+
+/*Footer area*/
+.footer {
+    padding: 30px;
+    border-top: 1px solid #eee;
+    margin-top: 70px;
+}
+
+.footer p {
+    text-align: center;
+    color: #3C4043;
+    font-size: 14px;
+}
+
+.footer p:last-child {
+    margin-top: 10px;
+}
+
+.footer p a {}

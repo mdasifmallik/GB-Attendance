@@ -1,0 +1,64 @@
+/*		Tablet Layout: 768px.
+-----------------------------------------------------------------*/
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {}
+
+
+
+/*		Mobile Layout: 320px.
+---------------------------------------------*/
+
+@media only screen and (max-width: 767px) {
+
+    .admin-panel-button a i {
+        display: none;
+    }
+
+    .attendance-search-area {
+        width: 100%;
+        padding: 25px 5px;
+    }
+
+    .searching-options {
+        padding: 20px 20px;
+        background: white;
+        width: 100%;
+        height: auto;
+        margin: 0 auto;
+        border-radius: 5px;
+    }
+
+    .login-options label {
+        margin: 0;
+    }
+
+    .login-options input {
+        width: 100%;
+        margin-top: 5px;
+        margin-bottom: 10px;
+    }
+
+    .login-options a {
+        margin: 0;
+    }
+    
+    .submit input{
+        width: 100px;
+        margin-top: 10px;
+    }
+
+}
+
+
+
+/*		Wide Mobile Layout: 480px.
+------------------------------------------------------------*/
+
+@media only screen and (min-width: 480px) and (max-width: 767px) {}
+
+
+/*	Retina media query.
+-----------------------------------------------*/
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (min-device-pixel-ratio: 2) {}

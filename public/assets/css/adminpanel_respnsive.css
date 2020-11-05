@@ -1,0 +1,151 @@
+/*		Tablet Layout: 768px.
+-----------------------------------------------------------------*/
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+
+    .admin-panel-side-bar {
+        width: 190px;
+    }
+
+    .admin-panel-main {
+        margin-left: 190px;
+        margin-top: 50px;
+    }
+
+    .admin-sub-heading {
+        overflow: hidden;
+        width: 100%;
+    }
+
+    .settings-option input {
+        width: 100%;
+    }
+
+}
+
+
+
+/*		Mobile Layout: 320px.
+---------------------------------------------*/
+
+@media only screen and (max-width: 767px) {
+
+    .side-bar-button {
+        display: block;
+    }
+
+    .home-button {
+        margin: 0;
+    }
+
+    .home-button a {
+        padding: 5px 6px;
+    }
+
+    .home-button a i {
+        display: none;
+    }
+
+    .admin-panel-side-bar {
+        width: 200px;
+        transition: 0.5s;
+        margin-left: -210px;
+    }
+
+    .toggle-side-bar {
+        margin-left: 0;
+    }
+    
+    .bar-color{
+        color: #C42311;
+    }
+
+    .admin-panel-side-bar nav ul li a i {
+        display: none;
+    }
+
+    .admin-panel-side-bar nav ul li button i:first-child {
+        display: none;
+    }
+
+    .admin-panel-side-bar nav ul li nav ul li a {
+        padding-left: 35px;
+    }
+
+    .admin-panel-main {
+        margin-left: 0;
+        padding: 0;
+        margin-top: 65px;
+    }
+
+    .admin-sub-heading {
+        margin-bottom: 40px;
+    }
+
+    .selection-input {
+        padding: 15px 20px;
+    }
+
+    .attendance-button {
+        text-align: center;
+        margin-top: 10px;
+    }
+
+    .admin-sub-heading {
+        overflow: hidden;
+        width: 100%;
+    }
+
+    .editing-option input {
+        width: 100%;
+        margin-bottom: 20px;
+        margin-right: 0;
+        padding-left: 5px;
+    }
+
+    .new-lecturer-button a {
+        margin-bottom: 10px;
+    }
+
+    .search-button {
+        float: right;
+        margin: 0;
+    }
+
+    .editing-option label {
+        width: 100%;
+    }
+
+    .add-student-table > table > tbody > tr > td:nth-child(3) input {
+        width: 63px;
+    }
+
+    .settings-option {
+        padding: 0 15px;
+        padding-top: 15px;
+    }
+
+    .settings-option input {
+        width: 100%;
+    }
+
+    #mymodal-content{
+        width: 300px;
+        margin-left: -150px;
+    }
+
+}
+
+
+
+/*		Wide Mobile Layout: 480px.
+------------------------------------------------------------*/
+
+@media only screen and (min-width: 480px) and (max-width: 767px) {}
+
+
+/*	Retina media query.
+-----------------------------------------------*/
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (min-device-pixel-ratio: 2) {}
